@@ -7,9 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Webkit/Webkit.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet WebView *webview;
+
+-(void)playPause;
+-(void)prevSong;
+-(void)nextSong;
 
 @end
